@@ -3,8 +3,13 @@ go install
 
 echo "------------------"
 gitinit -h
+#gitinit --help
+#gitinit -v
+#gitinit --version
 echo "------------------"
-
-#gitinit
+gitinit --init
+echo "------------------"
 gitinit --bare
-#gitinit repo
+echo "------------------"
+gitinit repo
+echo "------------------"
