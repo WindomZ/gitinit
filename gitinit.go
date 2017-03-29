@@ -12,7 +12,7 @@ func main() {
 		Action(gitinit.GitInitAction)
 
 	commander.Program.
-		Option("--bare").
+		Option("--bare", "", gitinit.FlagBareAction).
 		Action(gitinit.FlagBareAction)
 
 	commander.Program.
