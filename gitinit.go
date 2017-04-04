@@ -14,19 +14,14 @@ func main() {
 
 	// gitinit --init
 	commander.Program.
-		Command("--init").
-		Action(gitinit.FlagInitAction)
+		Command("-i --init").
+		Action(gitinit.FlagInitAction).
+		Option("--remote=<repo>")
 
 	// gitinit --bare
 	commander.Program.
-		Command("--bare").
+		Command("-b --bare").
 		Action(gitinit.FlagBareAction)
 
-	// gitinit repo
-	commander.Program.
-		Command("repo").
-		Action(gitinit.RepoAction)
-
 	commander.Program.Parse()
-	//commander.Program.ShowHelpMessage()
 }

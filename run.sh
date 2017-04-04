@@ -8,8 +8,7 @@ gitinit -h
 #gitinit --version
 echo "------------------"
 gitinit --init
+gitinit --init --remote=xxx
 echo "------------------"
 gitinit --bare
-echo "------------------"
-gitinit repo
 echo "------------------"

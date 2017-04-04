@@ -6,6 +6,6 @@ import (
 )
 
 var GitInitAction = func(c commander.Context) error {
-	fmt.Println("init...")
+	fmt.Println("gitinit...")
 	return nil
 }
