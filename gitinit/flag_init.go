@@ -14,7 +14,7 @@ var FlagInitAction = func(c commander.Context) error {
 			return errors.New(out)
 		}
 	}
-	if err := FlagRemoteAction(c); err != nil {
+	if err := FlagOriginAction(c); err != nil {
 		return err
 	}
 	return nil
