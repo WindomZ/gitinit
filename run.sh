@@ -7,8 +7,10 @@ gitinit -h
 #gitinit -v
 #gitinit --version
 echo "------------------"
-gitinit --init
-gitinit --init --remote=xxx
-echo "------------------"
-gitinit --bare
-echo "------------------"
+#gitinit --init
+#gitinit --init --origin=xxx
+#echo "------------------"
+#gitinit --bare
+#echo "------------------"
+#gitinit --origin=xxx
+#echo "------------------"
