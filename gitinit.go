@@ -28,7 +28,7 @@ func main() {
 	// gitinit --origin=REPO
 	commander.Program.
 		Command("--origin=REPO").
-		Description("reset 'origin' repository").
+		Description("reset 'origin' repository to 'REPO'").
 		Action(gitinit.FlagOriginAction)
 
 	if _, err := commander.Program.Parse(); err != nil {
