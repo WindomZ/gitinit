@@ -17,7 +17,7 @@ func main() {
 		Command("-i --init").
 		Description("create an empty Git repository or reinitialize an existing one").
 		Action(gitinit.FlagInitAction).
-		Option("--origin=REPO", "manage 'origin' repository to 'REPO'")
+		Option("--origin=REPO")
 
 	// gitinit --bare
 	commander.Program.
@@ -31,5 +31,7 @@ func main() {
 		Description("reset 'origin' repository").
 		Action(gitinit.FlagOriginAction)
 
-	commander.Program.Parse()
+	if _, err := commander.Program.Parse(); err != nil {
+		panic(err)
+	}
 }
