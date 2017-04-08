@@ -28,8 +28,10 @@ $ gitinit -h
     gitinit -v|--version
 
   Options:
+    -i --init     create an empty Git repository or reinitialize an existing one
+    -b --bare     create a bare repository
     --origin=REPO
-                  manage 'origin' repository to 'REPO'
+                  reset 'origin' repository to 'REPO'
     -h --help     show help message
     -v --version  show version
 ```
